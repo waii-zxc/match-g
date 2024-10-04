@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Match game</title>
+    <link rel="stylesheet" type="text/css" href="../../style/style.css">
+</head>
+<body>
+    <header>
+        <div class="cont">
+            <div class="Rectangle1">
+                <span class="txtname1">MATCH</span>
+            </div>
+            
+            <div class="Rectangle2">
+                <span class="txtname2">MATCH</span>
+            </div>
+            
+            <div class="head">
+                <div class="info_but">
+                    <a href="../../pages/pageone.html">
+                        <div class="cycle">?</div>
+                        About Game
+                    </a>
+                    <a href="gmscore.html">
+                        <div class="cycle">&#9733;</div>
+                        Best Score
+                    </a>
+                    <a href="gmsttns.html">
+                        <div class="cycle">&#9881;</div>
+                        Game Settings
+                    </a>
+                </div>
+                <div class="regcont">
+                    <a href="#" id="register-link" class="register-button">REGISTER NEW PLAYER</a>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register new Player</h2>
+            <input type="text" id="firstName" class="form-input" placeholder="First Name">
+            <input type="text" id="lastName" class="form-input" placeholder="Last Name">
+            <input type="email" id="email" class="form-input" placeholder="Email">
+            <div class="buttons">
+                <button class="confirm">ADD USER</button>
+                <button class="cancel">CANCEL</button>
+            </div>
+        </div>
+        <img class="userpctr" src="../../imgs/user-default.png" alt="User Picture" />
+    </div>
+    
+    <div id="board">
+      
+      
+        <div class="timer">
+            <div class="display">00:00</div>
+            <button class="start">START</button>
+            <button class="stop">STOP</button>
+        </div>
+
+    </div>
+    
+    <script src="../scripts/game.js"></script>
+    <script src="../../scripts/index.js"></script>
+</body>
+</html>

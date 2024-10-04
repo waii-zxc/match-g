@@ -1,0 +1,498 @@
+$lightblue: #2196F3;
+
+header{
+    background-color: $lightblue;
+    width: 100%;
+    height: 64px;
+    gap: 0px;
+    opacity: 0px;
+    .cont{
+    display: grid;
+    .Rectangle1{
+        height: 20px;
+        margin-left: 24px;
+        gap: 0px;
+        opacity: 0px;
+        width: 80px;
+        margin-top: 12px;
+     text-align: center;
+ }
+ .txtname1{
+     width: 80px;
+     height: 19px;
+     top: 12px;
+     left: 24px;
+     gap: 0px;
+     opacity: 0px;
+     font-family: Roboto;
+     font-size: 11px;
+     font-weight: 500;
+     line-height: 16px;
+     letter-spacing: 1.25px;
+     text-align: center;
+     text-shadow:  1px 1px 2px black;
+     color: white;
+
+   
+ }
+ .Rectangle2{
+    width: 80px;
+    height: 20px;
+    margin-left: 24px;
+    gap: 0px;
+    opacity: 0px;
+    background: #FFFFFF;  
+    text-align: center;  
+    
+ }
+ .txtname2{
+    width: 80px;
+    height: 19px;
+    top: 32px;
+    left: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+    text-align: center;
+    color: #2196F3;
+    text-shadow: 1px 1px 2p #00000040;
+ }
+
+ 
+ $header-color: #2196F3;
+
+
+ 
+ .head {
+    text-align: center; 
+    
+
+.info_but {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: flex-start; 
+    margin-top: 20px; 
+    margin-left: -1000px;
+
+    a {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        color: white; 
+        text-decoration: none; 
+        margin: 85px; 
+        margin-top: -60px;
+        margin-left: -10px; 
+
+        .cycle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $lightblue;
+            font-size: 25px;
+            margin-bottom: 5px;
+            transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        }
+        .cycle:hover {
+            transform: scale(1.2); 
+        }
+     }
+        }
+    }
+}
+.regcont {
+    position: fixed;
+  top: 20px;
+  right: 35px;
+ 
+        .register-button {
+            padding: 10px 20px;
+            background-color: white;
+            color: $lightblue;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: Roboto;
+            transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+            display: inline-block;
+        }
+        .register-button:hover{
+            transform: scale(1.2);
+            display: inline-block;
+        }
+   
+    }
+    .startgame{
+        padding: 10px 20px;
+        background-color: white;
+        color: $lightblue;
+        text-decoration: none;
+        font-family: Roboto;
+        transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        display: inline-block;
+        border-radius: 5px;
+        margin-right: -1800px;
+    }
+    .startgame:hover{
+        transform: scale(1.2);
+        display: inline-block;
+    }
+}
+
+.modal {
+
+    .userpctr {
+        width: 198px;
+        height: 198px;
+        margin-top: -50px;
+        margin-left: -250px;
+        gap: 0px;
+        opacity: 0px;
+        
+    }    
+
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;   
+    z-index: 1;   
+
+    &-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        width: 639px;
+        height: 460px;
+        top: 284px;
+        left: 400px;
+        gap: 0px;
+        opacity: 0px;
+        
+       
+
+        .close {
+            color: gray;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .form-input {
+            align-items: flex-start;
+            margin: 10px 0;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            width: 328px;
+            top: 384px;
+            left: 421px;
+            gap: 0px;
+            height: 72px;
+            opacity: 0px;
+            background-color: #eeeded;
+
+        }
+
+        .buttons {
+            margin-top: 10px;
+
+            button {
+                margin: 0 5px;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &.confirm {
+                    background-color: $lightblue;
+                    color: white;
+                    font-family: Roboto;
+                    width: Hug (108px)px;
+                    height: Fixed (36px)px;
+                    top: 682px;
+                    left: 802px;
+                    padding: 10px 16px 10px 16px;
+                    gap: 10px;
+                    border-radius: 4px 0px 0px 0px;
+                    opacity: 0px;                    
+                }
+              
+
+                &.cancel {
+                    background: #E3F2FD;
+                    color: $lightblue;
+                    font-family: Roboto;
+                    width: Hug (93px)px;
+                    height: Fixed (36px)px;
+                    top: 682px;
+                    left: 927px;
+                    padding: 10px 16px 10px 16px;
+                    gap: 10px;
+                    border-radius: 4px 0px 0px 0px;
+                    opacity: 0px;
+
+                }
+            }
+        }
+    }
+}
+
+.maincont{
+    
+    width: 1000px;
+    height: 802px;
+    margin-top: 37px;
+    margin-left: 450px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    opacity: 0px;
+    background: #0000000D;
+    padding: 10px;
+    padding-left: 50px;
+    h1{
+        width: Hug (256px)px;
+        height: Hug (30px)px;
+        gap: 1px;
+        opacity: 0px;
+        font-family: Roboto;
+    }
+
+    .Rectangle3{
+        width: 360px;
+        height: 230px;
+        background-color: white;
+        font-family: Roboto;
+        padding: 0%;
+        cursor:	default;
+        padding-left: 35px;
+
+        .regwin{
+            width: 360px;
+            height: 230px;
+            margin-top: -42px;
+            margin-left: 490px;
+            gap: 0px;
+            opacity: 0px;
+            
+        }
+       
+        .circle {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+            background-color: $lightblue;
+            color: white;
+            margin-left: -25px;
+            margin-top: 10px;
+    }
+        .desc1{
+            opacity: 50%;
+            margin-left: 50px;
+            margin-top: -50px;
+            font-family: Roboto;
+            font-size: medium;
+            font-weight: normal;
+            }
+
+    }
+    .Rectangle4{
+        width: 360px;
+        height: 132px;
+        background-color: white;
+        margin-top: 25px;
+        cursor:	default;
+        padding-left: 35px;
+
+        .imggamesettgs{
+            width: 120px;
+            height: 80px;
+            margin-top: -20px;
+            margin-left: 620px;
+            gap: 0px;
+            opacity: 0px;            
+        }
+
+        .circle2 {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+            background-color: $lightblue;
+            color: white;
+            margin-left: -25px;
+            margin-top: 10px;
+    }
+    .desc2{
+        opacity: 50%;
+        margin-left: 50px;
+        margin-top: -50px;
+        font-family: Roboto;
+        font-size: medium;
+        font-weight: normal;
+        }
+        img{
+            width: 116px;
+            height: 73px;
+            top: 421px;
+            left: 920px;
+            gap: 0px;
+            opacity: 0px;            
+        }
+    
+    }
+    .Rectangle5{
+        width: 360px;
+        height: 240px;
+        background-color: white;
+        cursor:	default;
+        padding-left: 35px;
+        margin-top: 25px;
+
+        .aboutgame{
+            width: 330px;
+            height: 240px;
+            margin-top: -55px;
+            margin-left: 490px;
+            gap: 0px;
+            opacity: 0px;
+        }
+
+        .circle3 {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+            background-color: $lightblue;
+            color: white;
+            margin-left: -25px;
+            margin-top: 10px;
+    }
+    .desc3{
+        opacity: 50%;
+        margin-left: 50px;
+        margin-top: -50px;
+        font-family: Roboto;
+        font-size: medium;
+        font-weight: normal;
+        }
+    }
+    
+
+
+}
+
+#board{
+    width: 1000px;
+    height: 802px;
+    margin: 20px auto;
+    background-color: #0000000D;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    
+
+    
+    .card{
+        height: 221px;
+        width: 182px;
+        margin: 2.5px 5px;
+        margin-left: 50px;
+        transition: transform 0.5s;
+        transform-style: preserve-3d
+    }
+    .flipped {
+        transform: rotateY(360deg);
+      }
+    
+ 
+.timer {
+    width: 256px;
+    height: 34px;
+    margin-top: 2%;
+    margin-left: 35%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    padding: 16px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    .display {
+    
+        opacity: 0.5;
+        font-size: 35px;
+        font-family: Roboto;
+        cursor: default;
+    }
+
+    .start {
+        padding: 10px 20px;
+        background-color: white;
+        color: $lightblue;
+        text-decoration: none;
+        font-family: Roboto;
+        transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        display: inline-block;
+        border-radius: 5px;
+        cursor: pointer;
+        border-color: white;
+        position: fixed;
+        top: 20px;
+        right: 350px;
+        
+        
+        &:hover {
+            transform: scale(1.2);
+            display: inline-block;
+        }
+    }
+    .stop {
+        padding: 10px 20px;
+        background-color: white;
+        color: $lightblue;
+        text-decoration: none;
+        font-family: Roboto;
+        transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        display: inline-block;
+        border-radius: 5px;
+        cursor: pointer;
+        border-color: white;
+        position: fixed;
+        top: 20px;
+        right: 350px;
+        visibility: hidden;
+        
+        &:hover {
+            transform: scale(1.2);
+            display: inline-block;
+        }   
+    }
+    }
+}
