@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Match Match game</title>
     <link rel="stylesheet" type="text/css" href="../../style/style.css">
-</head>
+ </head>
 <body>
     <header>
         <div class="cont">
             <div class="Rectangle1">
                 <span class="txtname1">MATCH</span>
             </div>
-
+            <img id="selectedAvatar" class="selected-avatar" src="imgs/user-default.png" alt="Selected Avatar">
+            
             <div class="Rectangle2">
                 <span class="txtname2">MATCH</span>
             </div>
-
             <div class="head">
                 <div class="info_but">
                     <a href="pageone.html">
@@ -27,40 +27,43 @@
                         <div class="cycle">&#9733;</div>
                         Best Score
                     </a>
-                    <a href="gmsttns.html">
-                        <div class="cycle">&#9881;</div>
+                    <a href="../pages/gmsttns.html">
+                        <div class="cycle">&#x2699;</div>
                         Game Settings
                     </a>
-
-                    <a href="../game.html">
-                        <div class="startgame">View game page</div>
-                    </a>
+                    
                 </div>
+                <a href="../game.html">
+                    <div class="startgame">START GAME</div>
+                </a>
                 <div class="regcont">
-                    <a href="#" id="register-link" class="register-button">REGISTER NEW PLAYER</a>
+                    <a href="#" id="register-link" class="register-button" onclick="openModal()">REGISTER NEW PLAYER</a>
                 </div>
+     
+                <div id="logcont">  </div>
+                
             </div>
-            
         </div>
     </header>
-
     <div id="modal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close" onclick="closeModal()">&times;</span>
             <h2>Register new Player</h2>
-            <input type="text" id="firstName" class="form-input" placeholder="First Name">
-            <input type="text" id="lastName" class="form-input" placeholder="Last Name">
-            <input type="email" id="email" class="form-input" placeholder="Email">
+            <input type="text" id="firstName" class="form-input1" placeholder="First Name">
+            <input type="text" id="lastName" class="form-input2" placeholder="Last Name">
+            <input type="email" id="email" class="form-input3" placeholder="Email">
             <div class="buttons">
-               <a href="game.html"><button class="confirm">ADD USER</button></a>
-                <button class="cancel">CANCEL</button>
+                <a href="../game.html" class="confirm" onclick="registerUser()">ADD USER</a>
+                <button class="cancel" onclick="closeModal()">CANCEL</button>
             </div>
         </div>
-        <img class="userpctr" src="../../imgs/user-default.png" alt="User Picture" />
+        <label for="avatarInput">
+            <img src="../imgs/user-default.png" class="avatar" id="avatarImage" onclick="selectAvatar()">
+        </label>
+        <input type="file" accept="image/*" id="avatarInput" onchange="previewAvatar(event)" style="display: none;">
     </div>
-
     <div class="maincont">
-        <h1>How to play?</h1>
+        <h2>How to play?</h2>
         <div class="Rectangle3">
             <div class="circle">1</div><br>
             <h2 class="desc1">Register new player in game</h2>
@@ -73,11 +76,10 @@
         </div>
         <div class="Rectangle5">
             <div class="circle3">3</div><br>
-            <h2 class="desc3">Start your new game! Remember card position and match it before time's up.</h2>
+            <h2 class="desc3">Start your new game! Remember card positions and match it before time's up.</h2>
             <img class="aboutgame" src="../imgs/aboutgame.png" alt="about game card" />
         </div>
     </div>
-
-    <script src="../../scripts/index.js"></script>
+    <script src="../scripts/index.js"></script>
 </body>
 </html>
